@@ -4,7 +4,9 @@ import { actors } from '../data';
 const Actors = () => {
   return (
     <div>
-      {/*{code here}*/}
+       {actors.map((el) => {
+          return (<div><h1>{el.name}</h1>{ele.movies.map(gen => {return <p>gen</p>}}</div>);
+        })}{" "}
     </div>
   );
 };

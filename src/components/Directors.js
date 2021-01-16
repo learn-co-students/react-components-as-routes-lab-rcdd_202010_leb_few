@@ -4,7 +4,9 @@ import { directors } from '../data';
 const Directors = () => {
   return (
     <div>
-      {/*{code here}*/}
+       {directors.map((el) => {
+          return (<div><h1>{el.name}</h1>{ele.movies.map(gen => {return <p>gen</p>}}</div>);
+        })}{" "}
     </div>
   );
 }

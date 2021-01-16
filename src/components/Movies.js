@@ -1,10 +1,13 @@
-import React from 'react';
-import { movies } from '../data';
+import React from "react";
+import { movies } from "../data";
 
-const Movies = () => {
+const Movies = ({ movie }) => {
   return (
     <div>
-        {/*{code here}*/}
+     <h1> Movies Page</h1>
+        {movies.map((el) => {
+          return (<div><h1>{el.title}</h1><p>{ el.time}</p>{ele.genre.map(gen => {return <p>gen</p>}}</div>);
+        })}{" "}
     </div>
   );
 };
